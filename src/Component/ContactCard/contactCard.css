@@ -1,0 +1,40 @@
+.contactCard {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  .contactCard:hover {
+    cursor: pointer;
+    border-bottom: 2px solid black;
+  }
+  .contactImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 12px;
+  }
+  .contactShortInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactTitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+  .contactAddress,
+  .shortDesc {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 4px;
+  }
+  
+  .rightArrow {
+    right: 10px;
+    position: absolute;
+  }
+  
