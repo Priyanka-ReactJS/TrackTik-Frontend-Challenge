@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-import ReactPaginate from 'react-paginate';
-
-import useFetch from '../../utility'
 import ContactDetails from '../ContactDetails/contactDetails';
 import "./contactCard.css";
 
 
-//https://tracktik-challenge.staffr.com/sites
 
 const ContactCard = ({ image, contactTitle, contactAddress, shortDesc , contactData }) => {
   const [showDetails, setShowDetails] = useState(false);
@@ -27,7 +23,9 @@ const ContactCard = ({ image, contactTitle, contactAddress, shortDesc , contactD
   );
 
   return (
+
     <>
+      
       <div className="contactCard" onClick={handleClick}>
         <img
           alt={contactTitle}

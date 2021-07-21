@@ -18,6 +18,7 @@
   .contactShortInfo {
     display: flex;
     flex-direction: column;
+    text-align: left;
   }
   .contactTitle {
     font-size: 16px;
