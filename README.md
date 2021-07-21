@@ -10,7 +10,7 @@ html/css : 45 mins to 1 hr
 JavaScript: 30 mins to 45 mins 
 
 ## keynotes
-- Here I did not use any Design librery becouse I can show my css knowlage.
+- Here I did not use any Design librery becouse I can expressed my css knowlage.
 - Axios for the API calls
 - react pagination for handel infinite-loading 
 

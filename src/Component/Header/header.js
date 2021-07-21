@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 
 const Header = props => {
-    const [toggle, toggleNav] = useState(false);
+  const [toggle, toggleNav] = useState(false);
 
 
- const Nav = styled.nav`
+  const Nav = styled.nav`
   padding: 0 20px;
   min-height: 9vh;
   background: #1c2022;
@@ -15,12 +15,12 @@ const Header = props => {
   align-items: center;
 `;
 
-const Logo = styled.h1`
+  const Logo = styled.h1`
   font-size: 25px;
   color: white;
 `;
 
-const Menu = styled.ul`
+  const Menu = styled.ul`
   list-style: none;
   display: flex;
 
@@ -33,9 +33,9 @@ const Menu = styled.ul`
   }
 `;
 
-const Item = styled.li``;
+  const Item = styled.li``;
 
-const Link = styled.a`
+  const Link = styled.a`
   color: white;
   text-decoration: none;
 
@@ -44,7 +44,7 @@ const Link = styled.a`
   }
 `;
 
-const NavIcon = styled.button`
+  const NavIcon = styled.button`
   background: none;
   cursor: pointer;
   border: none;
@@ -55,7 +55,7 @@ const NavIcon = styled.button`
   }
 `;
 
-const Line = styled.span`
+  const Line = styled.span`
   display: block;
   border-radius: 50px;
   width: 25px;
@@ -69,7 +69,7 @@ const Line = styled.span`
   }
 `;
 
-const Overlay = styled.div`
+  const Overlay = styled.div`
   position: absolute;
   height: ${props => (props.open ? "91vh" : 0)};
   z-index : 9999;
@@ -82,7 +82,7 @@ const Overlay = styled.div`
   }
 `;
 
-const OverlayMenu = styled.ul`
+  const OverlayMenu = styled.ul`
   list-style: none;
   position: absolute;
   left: 50%;
@@ -100,9 +100,9 @@ const OverlayMenu = styled.ul`
     margin: 50px 0px;
   }
 `;
-    return (
-        <>
-            <Nav>
+  return (
+    <>
+      <Nav>
         <Logo>Schaduling</Logo>
         <NavIcon onClick={() => toggleNav(!toggle)}>
           <Line open={toggle} />
@@ -117,12 +117,12 @@ const OverlayMenu = styled.ul`
               Admin
             </Link>
           </Item>
-          
+
         </OverlayMenu>
       </Overlay>
-      
-        </>
-    );
+
+    </>
+  );
 };
 
 
